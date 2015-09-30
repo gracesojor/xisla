@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vamos! Great Sta. Cruz Island Community Website</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+
+
+<link href="stylesheets/bootstrap.css" rel='stylesheet' type='text/css' />
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="javascript/jquery.min.js"></script>
+		 <!-- Custom Theme files -->
+		<link href="stylesheets/style.css" rel='stylesheet' type='text/css' />
+   		 <!-- Custom Theme files -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<!----webfonts--->
+		<link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+		<!---//webfonts--->
+		<!---- start-smoth-scrolling---->
+		<script type="text/javascript" src="javascripts/move-top.js"></script>
+		<script type="text/javascript" src="javascripts/easing.js"></script>
+		<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+		 <!---- start-smoth-scrolling---->
+
+     <div id="fb-root"></div>
+     <script>(function(d, s, id) {
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) return;
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3&appId=641985282487174";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));</script>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <a class="navbar-brand">Great Santa Cruz Island</a>
+          <ul class="nav navbar-nav">
+              <li class="active"><a href="/bienvenidos/index">Home</a></li>
+            </ul>
+          <a class="navbar-brand" href="/pages/AboutMe">About</a>
+          <a class="navbar-brand" href="/pages/AboutMe">Testimonials</a>
+
+          <!---- <a class="navbar-brand" href="/pages/AboutMe">ViewList</a>
+          <a class="navbar-brand" href="/events/createevent">Create Event</a>
+          ---->
+
+        </div>
+      </div>
+    </nav>
+
+
+
+
+
+
+    			<!----- top-grids ----->
+    			<div class="top-grids">
+    				<div class="container">
+    					<div class="top-grids-head text-center">
+
+                <h1>Terms of Use</h1>
+                <p>Every effort has been exerted to make this website as complete, accurate and updated as possible. The author shall have neither liability nor responsibility to any person or entity with respect to any loss or damage arising from the information contained in this website. Any query or comment will be dealt with appropriate action. Last updated September 25, 2015.
+                </p>
+
+    					</div>
+
+    				</div>
+    			</div>
+    			<!----- top-grids ----->
+
+>
+    			<!----- social-icons ---->
+    			<div class="social-icons">
+
+    				<!---- footer-links ---->
+    				<div class="footer-links">
+    					<ul>
+    					  <li><a > About </a><span> </span></li>
+                <li><a href="/footerlinks/termsofuse"> Terms of Use </a><span> </span></li>
+                <li><a href="/footerlinks/support"> Support </a><span> </span></li>
+                <li><a href="/footerlinks/disclaimer"> Disclaimer </a><span> </span></li>
+    					</ul>
+
+              <ul>
+    						<li><p>We'd really love to hear from you and your island stories so why not
+drop us an email (greatstacruzisland@gmail.com) and we'll get back to you as soon as we can. </a></p><span> </span></li>
+
+    					</ul>
+
+    					<script type="text/javascript">
+    									$(document).ready(function() {
+    										/*
+    										var defaults = {
+    								  			containerID: 'toTop', // fading element id
+    											containerHoverID: 'toTopHover', // fading element hover id
+    											scrollSpeed: 1200,
+    											easingType: 'linear'
+    								 		};
+    										*/
+
+    										$().UItoTop({ easingType: 'easeOutQuart' });
+
+    									});
+    								</script>
+    									<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+    				</div>
+    				<!---- footer-links ---->
+    			</div>
+    			<!----- social-icons ---->
+    		</div>
+    		<!---- container ---->
+
+
+
+</body>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+
+</html>
